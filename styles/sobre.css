@@ -18,6 +18,12 @@ header {
     z-index: 1000;
     box-sizing: border-box;
 }
+p {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
 
 header .container {
     display: flex;
