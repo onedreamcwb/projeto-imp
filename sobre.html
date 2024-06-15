@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imperial E-Sports</title>
     <link rel="stylesheet" href="./styles/sobre.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
     </style>
@@ -28,14 +30,28 @@
         </div>
     </header>
     <section class="content">
-        <div class="media">
-            <img src="images/intro-image.jpg" alt="Imagem de introdução">
-        </div>
         <div class="text">
             <h2>Bem-vindo à Guild Imperial ESports!</h2>
             <p>Fundada em 06 de junho de 2024, a Guild Imperial ESports nasceu da paixão de um grupo de amigos por jogos competitivos, especialmente Blood Strike. Desde o início, nosso objetivo foi criar uma comunidade vibrante e acolhedora, onde jogadores de todos os níveis pudessem se unir para melhorar suas habilidades, competir em alto nível e, acima de tudo, se divertir.</p>
             <p>Com uma dedicação inabalável à excelência, nossa guilda rapidamente se destacou no cenário dos eSports. Valorizamos o espírito de equipe, a camaradagem e o respeito mútuo, acreditando que juntos podemos alcançar grandes conquistas. Seja você um jogador experiente ou alguém que está apenas começando, a Imperial ESports oferece um ambiente propício para o crescimento e o sucesso.</p>
             <p>Venha fazer parte da nossa jornada épica e ajude-nos a deixar nossa marca no mundo dos eSports!</p>
+        </div>
+        <div class="media slider">
+            <div><img src="./assets/imgs/image-removebg-preview (15).png" alt="Imagem de introdução 1"></div>
+            <div><img src="./assets/imgs/image-removebg-preview (18).png" alt="Imagem de introdução 2"></div>
+            <div><img src="./assets/imgs/image-removebg-preview (3).png" alt="Imagem de introdução 3"></div>
+        </div>
+    </section>
+
+    <!-- Seções restantes sem o slider -->
+
+    <section class="content">
+        <div class="media">
+            <img src="./assets/imgs/image-removebg-preview (3).png" alt="Nossa História">
+        </div>
+        <div class="text">
+            <h2>Nossa História</h2>
+            <p>Desde a nossa fundação por [nomes dos fundadores], crescemos de uma pequena equipe de amigos para uma das guildas mais respeitadas no cenário de eSports. Com inúmeras vitórias e participações em torneios, nosso percurso é marcado pela dedicação e paixão pelo jogo.</p>
         </div>
     </section>
 
@@ -136,5 +152,21 @@
             <p>Redes Sociais: <a href="[Link para redes sociais]">[Links para redes sociais]</a></p>
         </div>
     </section>
+    <!-- Inclua os scripts do Slick Slider apenas no final do corpo -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+        });
+    </script>
 </body>
 </html>
