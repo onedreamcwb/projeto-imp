@@ -1,0 +1,88 @@
+body {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #001d0c;
+} 
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #00702f;
+    color: #fff;
+    padding: .5rem 1rem;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header .logo-title {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    width: 40px; /* Ajuste o tamanho conforme necessário */
+    height: 40px; /* Ajuste o tamanho conforme necessário */
+    border-radius: 50%; /* Faz a imagem ficar em forma de círculo */
+    margin-right: 0.5rem; /* Espaçamento entre a logo e o título */
+}
+
+header h1 {
+    font-size: 1.5rem; /* Tamanho menor do título */
+    margin: 0;
+}
+header h1 a {
+    color: inherit; /* Mantém a cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    font-family: inherit; /* Mantém a fonte do h1 */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 1rem;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem; /* Tamanho menor do texto */
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding-top: 60px; /* Espaço para compensar o cabeçalho fixo */
+    background-color: #001d0c;
+    text-align: center; /* Centraliza o vídeo */
+}
+
+.video-container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    max-width: 1200px; /* Define uma largura máxima para o vídeo */
+}
